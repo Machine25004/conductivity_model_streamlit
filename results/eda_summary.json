@@ -1,0 +1,69 @@
+{
+  "raw_file": "G:\\document\\conductivity_model\\data\\raw_data.xlsx",
+  "raw_rows": 1057,
+  "raw_columns": [
+    "formula",
+    "temperature",
+    "conductivity",
+    "lg_conductivity"
+  ],
+  "missing_values": {
+    "formula": 0,
+    "temperature": 0,
+    "conductivity": 0,
+    "lg_conductivity": 0
+  },
+  "duplicate_rows": 0,
+  "unique_formulas": 720,
+  "unique_formula_temp_pairs": 1057,
+  "pymatgen_parse_failures": [],
+  "target_log10_consistency": {
+    "max_abs_diff": 0.0016265726852098261,
+    "mean_abs_diff": 2.219637702550372e-05,
+    "note": "target column is trusted as-is; differences come from rounding in source"
+  },
+  "temperature": {
+    "min": 278.0,
+    "max": 1146.0,
+    "unique_values": 225,
+    "quantiles": {
+      "0.25": 298.0,
+      "0.5": 298.0,
+      "0.75": 361.0
+    }
+  },
+  "target": {
+    "min": -10.9652893,
+    "max": -0.560667306,
+    "mean": -4.493195537579553,
+    "std": 1.9602000766709764,
+    "unit": "lg_conductivity / log10(S/cm)"
+  },
+  "rows_per_formula": {
+    "max": 15,
+    "mean": 1.4680555555555554,
+    "median": 1.0
+  },
+  "formula_with_most_rows": {
+    "Li0.5La0.5TiO3": 15,
+    "((Li2S)0.6(SiS2)0.4)95(Li4SiO4)5": 10,
+    "Li5La3Ta2O12": 9,
+    "Li1.5Al0.5Ge1.5(PO4)3": 8,
+    "Li6BaLa2Ta2O12": 8,
+    "Li1.4S2.2P0.6": 7,
+    "(Li2O)50(Al2O3)4(P2O5)46": 7,
+    "Li6SrLa2Ta2O12": 7,
+    "(Li2O)50(Al2O3)2(P2O5)48": 6,
+    "(Li2O)50(Al2O3)3(P2O5)47": 6
+  },
+  "split": {
+    "train": 867,
+    "test": 190
+  },
+  "split_formula_groups": {
+    "test": 144,
+    "train": 576
+  },
+  "feature_count": 105,
+  "feature_cache_file": "G:\\document\\conductivity_model\\data\\features.csv"
+}
