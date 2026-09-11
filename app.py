@@ -294,14 +294,14 @@ def render_sidebar(model_files: list[Path], metrics: pd.DataFrame | None) -> Non
         row = metrics[metrics["model"] == selected_key]
         if not row.empty:
             best = row.iloc[0]
-            st.sidebar.markdown(
-                f"""
-                - R²: **{best['r2_test']:.4f}**
-                - RMSE: **{best['rmse_test']:.4f}**
-                - MAE: **{best['mae_test']:.4f}**
-                """,
-                unsafe_allow_html=True,
-            )
+            # st.sidebar.markdown(
+            #     f"""
+            #     - R²: **{best['r2_test']:.4f}**
+            #     - RMSE: **{best['rmse_test']:.4f}**
+            #     - MAE: **{best['mae_test']:.4f}**
+            #     """,
+            #     unsafe_allow_html=True,
+            # )
             st.sidebar.caption("按化学式分组的留出集测试结果")
         else:
             st.sidebar.caption("该模型暂无测试指标")
